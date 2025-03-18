@@ -1,0 +1,157 @@
+:root {
+    --text-color: rgba(0, 0, 0, 0.87);
+    --bg-color: #ffffff;
+  
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  /* Theme definitions moved higher for better cascade */
+  .light-mode {
+    --text-color: rgba(0, 0, 0, 0.87);
+    --bg-color: #ffffff;
+  }
+
+  .dark-mode {
+    --text-color: rgba(255, 255, 255, 0.87);
+    --bg-color: #242424;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+  }
+
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .menu-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .menu-button:hover {
+    background-color: #45a049;
+  }
+
+  .theme-toggle-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .theme-toggle-button:hover {
+    background-color: #555;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold;
+}
+select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
